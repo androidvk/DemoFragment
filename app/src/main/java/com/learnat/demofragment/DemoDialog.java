@@ -23,6 +23,8 @@ public class DemoDialog extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-       return inflater.inflate(R.layout.mydialog,container,false);
+        View view = inflater.inflate(R.layout.mydialog, container, false);
+        return view;
+
     }
 }

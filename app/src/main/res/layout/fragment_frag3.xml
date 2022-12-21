@@ -4,17 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registration">
+    android:background="@color/white"
+    tools:context=".Frag3">
 
+    <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:textSize="20sp"
-        android:id="@+id/textView3"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Registration"
+        android:layout_gravity="center"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="This is fragment 3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_frag3" />
+
+    <EditText
+        android:maxLength="100"
+        android:id="@+id/edit_frag3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Type Here"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
